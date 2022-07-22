@@ -1,0 +1,6 @@
+*/
+.*
+
+# Included
+!.gitignore
+!.zshrc
