@@ -109,6 +109,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias zshreload="exec zsh"
 
 alias gSync="ggpnp"
+alias gStatus="gst"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
