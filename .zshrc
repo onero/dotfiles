@@ -80,6 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git zsh-autosuggestions sudo copypath dirhistory macos)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.profile
 
 # User configuration
 
@@ -107,7 +108,6 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias zshreload="exec zsh"
 
-alias goWork="cd ~/Documents/GitHub/relationsbank"
 alias gSync="ggpnp"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
