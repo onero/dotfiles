@@ -126,6 +126,11 @@ alias gStatus="git status"
 alias week="date +'Det er uge: %V i år %Y'"
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
+# Make a new directory with parameter name & navigate into
+function mk() {
+  mkdir -p "$@" && cd "$@"
+}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
