@@ -118,6 +118,7 @@ alias nrm="rm -rf node_modules && npm install"
 
 # Git
 alias gc="git commit -am "
+alias ga="git add "
 alias gSync="git pull && git push"
 alias gStatus="git status"
 
