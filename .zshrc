@@ -123,6 +123,7 @@ alias gSync="git pull && git push"
 alias gStatus="git status"
 
 # Miscellaneous
+alias v="vim"
 alias week="date +'Det er uge: %V i år %Y'"
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
