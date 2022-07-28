@@ -7,7 +7,7 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install software in Brewfile
-brew bundle --file $DOTFILES/mac-setup/Brewfile
+brew bundle --file ~/.dotfiles/mac-setup/Brewfile
 
 # Update App Store apps
 sudo softwareupdate -i -a
