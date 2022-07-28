@@ -18,6 +18,7 @@ The personal dotfiles of Adamino!
 - Installs & updates software
 - Sets default settings
 - Installs symlinks
+- Add syntax highlighting for nano
 
 ## How to use
 ```bash
