@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions sudo copypath dirhistory macos)
+plugins=(zsh-autosuggestions sudo copypath dirhistory macos)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.profile
@@ -104,12 +104,26 @@ source ~/.profile
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
+# Configs
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias zshreload="exec zsh"
 
-alias gSync="ggpnp"
-alias gStatus="gst"
+# npm
+alias ni="npm install"
+alias nu="npm uninstall"
+alias nup="npm update"
+alias nrm="rm -rf node_modules && npm install"
+
+# Git
+alias gc="git commit -am "
+alias gSync="git pull && git push"
+alias gStatus="git status"
+
+# Miscellaneous
+alias week="date +'Det er uge: %V i år %Y'"
+alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
