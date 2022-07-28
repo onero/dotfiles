@@ -1,3 +1,6 @@
 #!/bin/bash
-ln ~/.dotfiles/.zshrc ~/.zshrc
-ln ~/.dotfiles/.gitconfig ~/.gitconfig
+source helper.sh
+
+ln $DOTFILES/.zshrc ~/.zshrc
+ln $DOTFILES/.gitconfig ~/.gitconfig
+ln $DOTFILES/.vimrc ~/.vimrc
