@@ -1,0 +1,5 @@
+[credential]
+	helper = store
+[user]
+	email = onero@users.noreply.github.com
+	name = Adam Hansen

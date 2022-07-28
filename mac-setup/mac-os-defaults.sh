@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Show all file extensions in the Finder.
 defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true" && killall Finder
 
