@@ -112,6 +112,7 @@ alias zshreload="exec zsh"
 
 # npm
 alias ni="npm install"
+alias nr="npm run"
 alias nu="npm uninstall"
 alias nup="npm update"
 alias nrm="rm -rf node_modules && npm install"
