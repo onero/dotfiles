@@ -123,6 +123,13 @@ alias ga="git add "
 alias gSync="git pull && git push"
 alias gStatus="git status"
 
+# Docker
+alias d="docker"
+alias dps="d ps"
+alias dc="docker-compose"
+alias dcUp="dc up"
+alias dcUp="dc down"
+
 # Miscellaneous
 alias v="vim"
 alias week="date +'Det er uge: %V i år %Y'"
