@@ -23,8 +23,8 @@ npm install npm -g
 npm update -g
 
 # Update Ruby & gems
-sudo gem update -system
-sudo gem update
+#sudo gem update -system
+#sudo gem update
 
 # Add syntax highlighting for nano
 echo 'include "/usr/local/Cellar/nano/*/share/nano/*.nanorc"' > ~/.nanorc
