@@ -122,6 +122,7 @@ alias gc="git commit -am "
 alias ga="git add "
 alias gSync="git pull && git push"
 alias gStatus="git status"
+alias gUntrack="git rm --cached"
 
 # Docker
 alias d="docker"
