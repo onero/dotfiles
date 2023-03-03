@@ -109,6 +109,7 @@ source $(brew --prefix nvm)/nvm.sh
 #
 
 # Configs
+alias godotfiles="cd ~/.dotfiles"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias zshreload="exec zsh"
