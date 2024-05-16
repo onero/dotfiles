@@ -126,7 +126,6 @@ alias gc="git commit -am "
 alias ga="git add "
 alias gSync="git pull && git push"
 alias gStatus="git status"
-alias gUntrack="git rm --cached"
 
 # Docker
 alias d="docker"
@@ -136,14 +135,24 @@ alias dc="docker-compose"
 alias dcUp="dc up"
 alias dcUp="dc down"
 
+# Rust
+alias c="cargo"
+
 # Miscellaneous
 alias v="vim"
 alias week="date +'Det er uge: %V i år %Y'"
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
+alias composer='docker run --rm -v $(pwd):/app composer'
+alias killProcessByPID='kill '
 
 # Make a new directory with parameter name & navigate into
-function mk() {
+unction mk() {
   mkdir -p "$@" && cd "$@"
+}
+
+# Find process with parameter port number
+function findProcessByPort() {
+  lsof -i :"$@"
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
