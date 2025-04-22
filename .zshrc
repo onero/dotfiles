@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions sudo copypath dirhistory macos)
+plugins=(zsh-autosuggestions sudo copypath macos)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.profile
@@ -110,11 +110,13 @@ source $(brew --prefix nvm)/nvm.sh
 
 # Configs
 alias godotfiles="cd ~/.dotfiles"
+alias profile="vim ~/.profile"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias zshreload="exec zsh"
 
 # npm
+alias n="npm"
 alias ni="npm install"
 alias nr="npm run"
 alias nu="npm uninstall"
@@ -122,10 +124,11 @@ alias nup="npm update"
 alias nrm="rm -rf node_modules && npm install"
 
 # Git
+alias g="git"
 alias gc="git commit -am "
 alias ga="git add "
-alias gSync="git pull && git push"
-alias gStatus="git status"
+alias gpp="git pull && git push"
+alias gs="git status"
 
 # Docker
 alias d="docker"
@@ -146,7 +149,7 @@ alias composer='docker run --rm -v $(pwd):/app composer'
 alias killProcessByPID='kill '
 
 # Make a new directory with parameter name & navigate into
-unction mk() {
+function mk() {
   mkdir -p "$@" && cd "$@"
 }
 
@@ -164,3 +167,4 @@ export NVM_DIR="$HOME/.nvm"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PATH="/usr/local/opt/libpq/bin:$PATH"
