@@ -22,7 +22,7 @@ The personal dotfiles of Adamino!
 
 ## How to use
 ```bash
-git glone https://github.com/onero/dotfiles.git ~/.dotfiles
+git clone https://github.com/onero/dotfiles.git ~/.dotfiles
 
 sh ~/.dotfiles/install-{linux/mac}.sh
 ```
