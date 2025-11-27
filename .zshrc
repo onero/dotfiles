@@ -123,11 +123,18 @@ alias nu="npm uninstall"
 alias nup="npm update"
 alias nrm="rm -rf node_modules && npm install"
 
+# pnpm
+alias pn="pnpm"
+alias pni="pnpm install"
+alias pnr="pnpm run"
+alias pnu="pnpm uninstall"
+alias pnup="pnpm update"
+
 # Git
 alias g="git"
 alias gc="git commit -am "
 alias ga="git add "
-alias gpp="git pull && git push"
+alias gsync="git pull && git push"
 alias gs="git status"
 
 # Docker
@@ -168,3 +175,18 @@ export NVM_DIR="$HOME/.nvm"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export PATH="/usr/local/opt/libpq/bin:$PATH"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/dkadahan/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+# pnpm
+export PNPM_HOME="/Users/dkadahan/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
