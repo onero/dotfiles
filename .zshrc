@@ -82,9 +82,6 @@ plugins=(zsh-autosuggestions sudo copypath macos)
 source $ZSH/oh-my-zsh.sh
 source ~/.profile
 
-eval "$(saml2aws --completion-script-bash)"
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -114,6 +111,7 @@ alias profile="vim ~/.profile"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias zshreload="exec zsh"
+alias hosts="sudo vim /etc/hosts"
 
 # npm
 alias n="npm"
@@ -154,6 +152,15 @@ alias week="date +'Det er uge: %V i år %Y'"
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 alias composer='docker run --rm -v $(pwd):/app composer'
 alias killProcessByPID='kill '
+alias simpleserver="ip a && ls -alh && python3 -m http.server 1337"
+alias catIdRsa="cat ~/.ssh/id_rsa.pub"
+
+# Methods
+
+# Find file by provided filename
+function findFile() {
+  find / -type f -iname "*$1*" 2>/dev/null
+}
 
 # Make a new directory with parameter name & navigate into
 function mk() {
