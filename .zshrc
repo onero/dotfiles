@@ -141,7 +141,7 @@ alias gs="git status"
 # Docker
 alias d="docker"
 alias dExec="d exec -it"
-alias dps="d ps"
+alias dps="d ps -a"
 alias dc="docker-compose"
 alias dcUp="dc up"
 alias dcUp="dc down"
