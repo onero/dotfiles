@@ -128,6 +128,9 @@ alias pnr="pnpm run"
 alias pnu="pnpm uninstall"
 alias pnup="pnpm update"
 
+# python
+alias p="python3"
+
 # Git
 alias g="git"
 alias gc="git commit -am "
